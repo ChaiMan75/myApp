@@ -12,9 +12,9 @@ import { z } from "zod";
 export async function initializeDatabase() {
   try {
     // Check if we already have data in the events table
-    const existingEvents = await db.select({ count: { count: events.id } }).from(events);
+    const existingEvents = await db.select().from(events);
     
-    if (existingEvents[0].count.count > 0) {
+    if (existingEvents.length > 0) {
       console.log("Database already has data. Skipping initialization.");
       return;
     }

@@ -1,62 +1,73 @@
 import { format } from "date-fns";
 import { Event } from "@/lib/types";
+import { Calendar, MapPin, ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 interface EventCardProps {
   event: Event;
 }
 
-const getCategoryClasses = (category: string) => {
+const getCategoryConfig = (category: string): { color: string, bgColor: string } => {
   switch(category.toLowerCase()) {
     case 'marathon':
-      return 'bg-primary-light text-primary-dark';
+      return { color: 'text-primary', bgColor: 'bg-primary/10' };
     case 'blood donation':
-      return 'bg-blue-100 text-blue-700';
+      return { color: 'text-red-600', bgColor: 'bg-red-50' };
     case 'elderly care':
-      return 'bg-green-100 text-green-700';
+      return { color: 'text-emerald-600', bgColor: 'bg-emerald-50' };
     case 'cyclothon':
-      return 'bg-orange-100 text-orange-700';
+      return { color: 'text-amber-600', bgColor: 'bg-amber-50' };
     case 'walkathon':
-      return 'bg-purple-100 text-purple-700';
+      return { color: 'text-purple-600', bgColor: 'bg-purple-50' };
     default:
-      return 'bg-gray-100 text-gray-700';
+      return { color: 'text-blue-600', bgColor: 'bg-blue-50' };
   }
 };
 
 const EventCard = ({ event }: EventCardProps) => {
-  const categoryClasses = getCategoryClasses(event.category);
+  const { color, bgColor } = getCategoryConfig(event.category);
   const formattedDate = typeof event.date === 'string' 
     ? format(new Date(event.date), 'MMM dd, yyyy') 
     : format(event.date, 'MMM dd, yyyy');
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1 h-full">
-      <img
-        src={event.imageUrl}
-        alt={event.title}
-        className="w-full h-48 object-cover"
-      />
+    <div className="group bg-white rounded-xl overflow-hidden shadow-lg shadow-gray-200/80 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full border border-gray-100">
+      <div className="relative overflow-hidden">
+        <img
+          src={event.imageUrl}
+          alt={event.title}
+          className="w-full h-52 sm:h-60 object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <Badge className={`absolute top-3 left-3 ${bgColor} ${color} border-0`}>
+          {event.category}
+        </Badge>
+      </div>
+      
       <div className="p-6">
-        <div className="flex justify-between items-center mb-3">
-          <span className={`${categoryClasses} text-xs uppercase font-semibold px-2 py-1 rounded-full font-heading`}>
-            {event.category}
-          </span>
-          <span className="text-neutral-600 text-sm">
-            <i className="far fa-calendar-alt mr-1"></i> {formattedDate}
-          </span>
+        <div className="flex items-center gap-2 mb-3 text-sm text-gray-500">
+          <div className="flex items-center">
+            <Calendar size={14} className="mr-1" />
+            {formattedDate}
+          </div>
+          <span>•</span>
+          <div className="flex items-center">
+            <MapPin size={14} className="mr-1" />
+            {event.location}
+          </div>
         </div>
-        <h3 className="font-heading font-bold text-xl mb-2">{event.title}</h3>
-        <p className="text-neutral-700 mb-4">{event.description}</p>
-        <div className="flex justify-between items-center">
-          <span className="text-neutral-600 text-sm">
-            <i className="fas fa-map-marker-alt mr-1"></i> {event.location}
-          </span>
-          <a 
-            href={event.registrationLink} 
-            className="font-heading font-semibold text-primary hover:text-orange-600"
-          >
-            Register Now
+        
+        <h3 className="font-heading font-bold text-xl mb-3 group-hover:text-primary transition-colors">{event.title}</h3>
+        
+        <p className="text-gray-600 mb-5 line-clamp-2">{event.description}</p>
+        
+        <Button asChild variant="ghost" className={`${color} ${bgColor} border-0 hover:bg-opacity-80 w-full justify-between mt-auto group`}>
+          <a href={event.registrationLink} className="flex items-center">
+            <span>Register Now</span>
+            <ArrowUpRight size={16} className="ml-1 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
           </a>
-        </div>
+        </Button>
       </div>
     </div>
   );
