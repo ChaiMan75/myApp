@@ -1,0 +1,147 @@
+Purpose of the Website:
+To showcase and promote recurring and upcoming initiatives focused on:
+
+Wellness (Soles) – activities like marathons, cyclothons, walks, and fitness drives.
+
+Social Responsibility (Souls) – efforts like organ donation drives, blood donation camps, supporting Anganwadis, elderly care programs, and palliative care awareness.
+
+The website aims to inspire participation, drive awareness, and make it easy for individuals and organizations to get involved.
+
+📄 Website Structure & Content Requirements
+1. Homepage
+Header with Tagline
+Suggested tagline: “Run with Purpose. Heal with Heart.”
+
+Introduction to Soles and Souls
+A short overview describing the dual spirit of the initiative.
+
+Highlight Cards or Sections for Each Category
+
+Marathons / Cyclothons
+
+Organ Donation
+
+Blood Donation
+
+Anganwadi Support
+
+Elderly Care
+
+Palliative Care
+
+Upcoming Events / Recurring Activities Carousel
+
+Show dynamic updates of upcoming marathons, donation drives, etc.
+
+Get Involved / Volunteer / Partner With Us CTA Buttons
+
+Photo Gallery / Past Event Highlights
+
+Newsletter Sign-up Section
+
+2. Subpage: Soles (Wellness Activities)
+Overview Paragraph
+What “Soles” stands for – promoting physical wellness through community-based movement initiatives.
+
+Activity Types
+
+Marathons
+
+Cyclothons
+
+Walkathons
+
+Wellness Workshops
+
+Success Stories or Testimonials
+
+Upcoming Events Calendar
+
+Join Us CTA / Registration Forms
+
+3. Subpage: Souls (Social Responsibility Initiatives)
+Overview Paragraph:
+“Souls” reflects the heart of our social mission — to uplift lives and give back with compassion.
+
+a. Organ Donation
+Importance, myths vs. facts, how to pledge
+
+Partnership with hospitals/organizations
+
+b. Blood Donation
+Upcoming camps, stats from past events
+
+How to become a regular donor
+
+c. Anganwadi Support
+Objectives: Nutrition, early education, sanitation
+
+Volunteer opportunities, donation options
+
+d. Elderly Care
+Visits, companionship initiatives, caregiver training
+
+How to get involved
+
+e. Palliative Care
+Spreading awareness, volunteering with hospice centers
+
+Emotional stories, dignity in care
+
+Each section should have:
+
+Clear content with engaging images or icons
+
+“Get Involved” or “Join Hands” CTA
+
+Related blog posts, testimonials or videos (optional)
+
+4. Subpage: Our Impact
+Infographics on events conducted
+
+Number of people impacted
+
+Collaborators & partners
+
+Gallery of smiles and stories
+
+5. Subpage: About Us
+Vision & Mission of Soles and Souls
+
+The story behind the name
+
+Founder's message (you!)
+
+Our team / Advisory Board
+
+6. Subpage: Contact Us
+Contact form
+
+Volunteer sign-up
+
+Partnership / CSR tie-up inquiries
+
+Social media links
+
+🖼 Design Suggestions
+Warm, vibrant colors (orange, green, and blue)
+
+Visual theme of footprints (for “Soles”) and heart/hands (for “Souls”)
+
+Easy navigation with a sticky menu
+
+Responsive for mobile and desktop
+
+🧾 Suggested Call-To-Actions (CTAs)
+Join the Movement
+
+Be a Donor
+
+Walk for a Cause
+
+Become a Volunteer
+
+Help Heal a Soul
+
+Bring a Smile
+
