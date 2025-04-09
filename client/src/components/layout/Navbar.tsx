@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { NavItem } from "@/lib/types";
 import { Button } from "@/components/ui/button";
+import Logo from "./Logo";
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
@@ -41,9 +42,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="bg-primary rounded-full p-2 mr-2">
-                <i className="fas fa-shoe-prints text-white text-xl"></i>
-              </div>
+              <span className="text-primary">
+                <Logo />
+              </span>
               <span className="font-heading font-bold text-xl text-neutral-800">
                 Soles & <span className="text-primary">Souls</span>
               </span>
@@ -57,7 +58,7 @@ const Navbar = () => {
                 <Button 
                   key={index} 
                   asChild 
-                  className="bg-primary hover:bg-orange-600 transition font-heading"
+                  className="bg-primary hover:bg-sky-500 transition font-heading"
                 >
                   <Link href={item.href} onClick={closeMenu}>
                     {item.label}
@@ -99,7 +100,7 @@ const Navbar = () => {
                   key={index}
                   href={item.href}
                   onClick={closeMenu}
-                  className="block font-heading font-medium text-white bg-primary py-2 px-4 rounded-full text-center hover:bg-orange-600 transition"
+                  className="block font-heading font-medium text-white bg-primary py-2 px-4 rounded-full text-center hover:bg-sky-500 transition"
                 >
                   {item.label}
                 </Link>

@@ -30,7 +30,7 @@ const SolesSection = () => {
     <section id="soles" className="py-16 bg-white">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="bg-orange-100 text-orange-700 text-sm uppercase font-semibold px-3 py-1 rounded-full font-heading">
+          <span className="bg-sky-100 text-primary text-sm uppercase font-semibold px-3 py-1 rounded-full font-heading">
             Wellness Activities
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl mt-4 mb-4 text-neutral-800">
@@ -43,7 +43,7 @@ const SolesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {initiatives.map((initiative, index) => (
-            <div key={index} className="bg-neutral-100 rounded-lg p-6 text-center hover:shadow-md transition">
+            <div key={index} className="bg-sky-50 rounded-lg p-6 text-center hover:shadow-md transition">
               <div className="bg-primary w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                 <i className={`${initiative.icon} text-white text-2xl`}></i>
               </div>
@@ -54,13 +54,13 @@ const SolesSection = () => {
         </div>
 
         <div className="mt-16">
-          <div className="bg-orange-100 rounded-lg overflow-hidden">
+          <div className="bg-sky-100 rounded-lg overflow-hidden">
             <div className="flex flex-wrap">
               <div className="w-full lg:w-1/2 p-8 lg:p-12">
                 <span className="bg-white text-primary text-sm uppercase font-semibold px-3 py-1 rounded-full font-heading">
                   Success Story
                 </span>
-                <h3 className="font-heading font-bold text-2xl lg:text-3xl mt-4 mb-4 text-orange-800">
+                <h3 className="font-heading font-bold text-2xl lg:text-3xl mt-4 mb-4 text-blue-700">
                   10,000 Steps for Education
                 </h3>
                 <p className="text-neutral-800 mb-6">
@@ -80,7 +80,7 @@ const SolesSection = () => {
                     <p className="text-sm text-neutral-600">Children Supported</p>
                   </div>
                 </div>
-                <Link href="/impact" className="font-heading font-semibold text-orange-800 hover:text-primary transition">
+                <Link href="/impact" className="font-heading font-semibold text-blue-700 hover:text-primary transition">
                   Read the full story <i className="fas fa-arrow-right ml-2"></i>
                 </Link>
               </div>
@@ -92,7 +92,7 @@ const SolesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button asChild className="bg-primary hover:bg-orange-600 font-heading font-semibold uppercase tracking-wide rounded-full transition transform hover:-translate-y-1 hover:shadow-md">
+          <Button asChild className="bg-primary hover:bg-sky-500 font-heading font-semibold uppercase tracking-wide rounded-full transition transform hover:-translate-y-1 hover:shadow-md">
             <Link href="/events">
               Join Our Next Event
             </Link>

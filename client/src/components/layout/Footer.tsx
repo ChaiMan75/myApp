@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { FooterSection, SocialLink, ContactInfo } from "@/lib/types";
+import Logo from "./Logo";
 
 const footerSections: FooterSection[] = [
   {
@@ -54,9 +55,9 @@ const Footer = () => {
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8">
             <div className="flex items-center mb-6">
-              <div className="bg-primary rounded-full p-2 mr-2">
-                <i className="fas fa-shoe-prints text-white text-xl"></i>
-              </div>
+              <span className="text-primary">
+                <Logo />
+              </span>
               <span className="font-heading font-bold text-xl text-white">
                 Soles & <span className="text-primary">Souls</span>
               </span>

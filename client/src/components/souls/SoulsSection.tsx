@@ -17,65 +17,65 @@ const initiatives: InitiativeCard[] = [
     icon: "fas fa-hand-holding-heart",
     title: "Organ Donation",
     description: "We spread awareness about organ donation, debunk myths, and facilitate pledges to help save lives through this noble act.",
-    color: "bg-green-500",
+    color: "bg-blue-500",
     link: {
       text: "Pledge to donate",
       href: "/contact#organ-donation",
-      textColor: "text-green-600 hover:text-green-700",
+      textColor: "text-blue-600 hover:text-blue-700",
     },
   },
   {
     icon: "fas fa-tint",
     title: "Blood Donation",
     description: "Our regular blood donation camps help maintain blood bank supplies and connect donors with recipients in need.",
-    color: "bg-blue-500",
+    color: "bg-primary",
     link: {
       text: "Become a donor",
       href: "/contact#blood-donation",
-      textColor: "text-blue-600 hover:text-blue-700",
+      textColor: "text-primary hover:text-sky-500",
     },
   },
   {
     icon: "fas fa-child",
     title: "Anganwadi Support",
     description: "We provide resources and volunteer support to Anganwadis to improve early childhood nutrition and education.",
-    color: "bg-primary",
+    color: "bg-sky-500",
     link: {
       text: "Support a center",
       href: "/contact#anganwadi",
-      textColor: "text-primary hover:text-orange-600",
+      textColor: "text-sky-600 hover:text-primary",
     },
   },
   {
     icon: "fas fa-users",
     title: "Elderly Care",
     description: "Our companionship programs and caregiver training help improve the quality of life for the elderly in our communities.",
-    color: "bg-neutral-600",
+    color: "bg-blue-600",
     link: {
       text: "Volunteer your time",
       href: "/contact#elderly-care",
-      textColor: "text-neutral-600 hover:text-neutral-800",
+      textColor: "text-blue-600 hover:text-blue-800",
     },
   },
   {
     icon: "fas fa-hands-helping",
     title: "Palliative Care",
     description: "We raise awareness about dignified end-of-life care and provide emotional support to families dealing with terminal illness.",
-    color: "bg-green-500",
+    color: "bg-primary",
     link: {
       text: "Learn more",
       href: "/contact#palliative-care",
-      textColor: "text-green-600 hover:text-green-700",
+      textColor: "text-primary hover:text-sky-500",
     },
   },
 ];
 
 const SoulsSection = () => {
   return (
-    <section id="souls" className="py-16 bg-gradient-to-br from-orange-100/10 via-green-100/10 to-blue-100/10">
+    <section id="souls" className="py-16 bg-gradient-to-br from-sky-100/20 via-blue-100/10 to-sky-200/20">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="bg-green-100 text-green-700 text-sm uppercase font-semibold px-3 py-1 rounded-full font-heading">
+          <span className="bg-blue-100 text-blue-700 text-sm uppercase font-semibold px-3 py-1 rounded-full font-heading">
             Social Responsibility
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-4xl mt-4 mb-4 text-neutral-800">
@@ -115,7 +115,7 @@ const SoulsSection = () => {
               </p>
               <Link
                 href="/contact#volunteer"
-                className="inline-block font-heading font-semibold text-white bg-green-500 hover:bg-green-600 py-2 px-4 rounded-full transition"
+                className="inline-block font-heading font-semibold text-white bg-primary hover:bg-sky-500 py-2 px-4 rounded-full transition"
               >
                 Volunteer Today
               </Link>
